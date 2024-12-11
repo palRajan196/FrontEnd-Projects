@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <!-- <h1><button>Mode</button></h1>
+    <label for="first">Enter First Number : </label>
+    <input type="number" id="first" step="any"/>
+<br> 
+<label for="operator">Enter operator : </label>
+    <select name="" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">X</option>
+        <option value="/">/</option>
+    </select>
+    <br>
+    <label for="second">Enter Second Number : </label>
+    <input type="number" id="second"  step="any"/>
+    <br>
+    <button onclick="calculate()">Calculate</button>
+    <input type="" id="result" readonly="" >
+     -->
+
+    <h1><span id="element"></span></h1>
+    <div class="parent">
+      <div class="child">
+        <div class="display">
+          <input type="text" name="display" id="result" readonly />
+        </div>
+        <div>
+          <input
+            type="button"
+            value="AC"
+            class="symbol"
+            onclick="allclear(this)"
+          />
+          <input
+            type="button"
+            value="DEL"
+            class="symbol"
+            onclick="delete_val(this)"
+          />
+          <input type="button" value="." class="symbol" onclick="num(this)" />
+          <input type="button" value="/" class="symbol" onclick="num(this)" />
+        </div>
+        <div>
+          <input type="button" value="7" onclick="num(this)" />
+          <input type="button" value="8" onclick="num(this)" />
+          <input type="button" value="9" onclick="num(this)" />
+          <input type="button" value="*" class="symbol" onclick="num(this)" />
+        </div>
+        <div>
+          <input type="button" value="4" onclick="num(this)" />
+          <input type="button" value="5" onclick="num(this)" />
+          <input type="button" value="6" onclick="num(this)" />
+          <input type="button" value="-" class="symbol" onclick="num(this)" />
+        </div>
+        <div>
+          <input type="button" value="1" onclick="num(this)" />
+          <input type="button" value="2" onclick="num(this)" />
+          <input type="button" value="3" onclick="num(this)" />
+          <input type="button" value="+" class="symbol" onclick="num(this)" />
+        </div>
+        <div>
+          <input type="button" value="00" onclick="num(this)" />
+          <input type="button" value="0" onclick="num(this)" />
+          <input
+            type="button"
+            value="="
+            class="symbol"
+            id="equal"
+            onclick="cal(this)"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      setTimeout(() => {
+        var typed = new Typed("#element", {
+          strings: ["DIGITAL CALCULATOR"],
+          typeSpeed: 50,
+        });
+      }, 2000);
+    </script>
+  </body>
+  <script src="calculator.js"></script>
+</html>

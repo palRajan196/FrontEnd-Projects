@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main::before{
+    position: absolute;
+    content: "";
+    /* background: url("<img src="https://flagsapi.com/:country_code/:style/:size.png">") no-repeat center/cover; */
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid rgb(192, 18, 18);
+    z-index: -1;
+    opacity: 0.7;
+}
+#gamename{
+    color:  rgb(5, 2, 9);
+    text-align: center;
+}
+
+#win{
+    color:  rgb(102, 6, 220);
+    text-align: center;
+    margin-top:2vw;
+}
+
+#head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#newgame{
+    width: 15vw;
+    height: 5vw;
+    border-radius: 1vw;
+    margin:2vw 2vw;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+#turn{
+    color: rgba(75, 42, 194, 0.927);
+    text-align: center;
+    font-size: 3vw;
+
+}
+#container{
+    width: 100vw;
+    height: 30vw;
+    /* background-color: rgb(195, 133, 40); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game{
+    width: 30vw;
+    height: 24vw;
+    border-radius: 1vw;
+    /* background-color: rgb(25, 209, 209); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 1vw;
+    /* font-size: 15vmin; */
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: #a8b20c;
+    color: rgb(1, 8, 8);
+}

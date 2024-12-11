@@ -1,0 +1,43 @@
+#Container1{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: aliceblue;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputData{ 
+    font-size: 18px;
+    width: 70%;
+    height: 20px;
+    margin: 10px;
+    padding-left: 20px;
+    color: rgb(11, 11, 79);
+}
+#Main{
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1729350131236-b086388068c1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D");
+}
+button{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(11, 11, 66);
+}
+p{
+    font-weight: 500;
+    font-size: 20px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car_Racer</title>
+    <link rel="stylesheet" href="Car.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="game">
+      <div id="h"></div>
+      <audio id="tune" src="./Music/tune.mp3"></audio>
+      <audio id="sucess" src="./Music/success.mp3"></audio>
+    
+      <div id="car">
+        <div id="bluecar"><img src="./Image/blue.png" alt="" /></div>
+        <div id="bluecar2"></div>
+      </div>
+      <div id="racercar"></div>
+      <div id="over"></div>
+    </div>
+    <div id="result">
+      <div id="over2">
+        <h1>Game Over !!</h1>
+        <h2 id="score"></h2>
+        <button id="restart" onclick="Next()">Restart</button>
+      </div>
+    </div>
+
+    <script src="Car.js"></script>
+  </body>
+</html>

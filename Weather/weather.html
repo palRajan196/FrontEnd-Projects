@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <div id="main">
+      <h1>Current Weather</h1>
+      <div id="timejoin">
+        <h2 id="evenmor"></h2>
+        <h2 id="day"></h2>
+        <h2>
+          <span id="time"></span>
+          <span id="hour"></span>
+          <span id="minute"></span>
+          <span id="second"></span>
+        </h2>
+      </div>
+
+      <div id="search">
+        <input type="text" id="input" placeholder="Search City Name ...." list="list"/>
+        <button id="search_btn" onclick="searchbtn()">Search</button>
+      </div>
+
+      <datalist id="list">
+        <option value="Fatehpur"></option>
+        <option value="Kanpur"></option>
+        <option value="Allahabad"></option>
+        <option value="Delhi"></option>
+        <option value="Bengaluru"></option>
+      </datalist>
+      <div id="weather_text">
+      </div>
+    </div>
+  </body>
+  <script src="weather.js"></script>
+</html>

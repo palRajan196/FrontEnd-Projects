@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulb On Off</title>
+    <link rel="stylesheet" href="Bulb.css" />
+    <script src="Bulb.js"></script>
+  </head>
+  <body>
+    
+    <h1><span id="element"></span></h1>
+    <hr />
+
+    <div id="img">
+      <img id="onof" src="off.png" alt="" />
+    </div>
+
+    <div id="btn">
+      <button onclick="on()">ON</button>
+      <button onclick="off()">OFF</button>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["BULB ON OFF"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>

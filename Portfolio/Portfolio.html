@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <!-- -----kit------- -->
+    <script
+      src="https://kit.fontawesome.com/1024db0a2b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="Portfolio.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="contain">
+        <nav id="head">
+          <h1><span>W</span>eb</h1>
+          <ul id="sidebar-hidden">
+            <i onclick="SidebarHidden()" class="fa-solid fa-xmark"></i>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Service">Services</a></li>
+            <li><a href="#Portfolio">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i id="sidebar" onclick="SideBar()" class="fa-solid fa-bars"></i>
+        </nav>
+      </div>
+    </div>
+    <div id="head-row">
+      <div id="head-col1">
+        <p>Front End Developer</p>
+        <h1>Hi, I'am Rajan <span> </span><br />From Uttar Pradesh</h1>
+      </div>
+      <div id="head-col2">
+        <img src="./Photos/Work3.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- ------------- about---------------- -->
+
+    <div id="About">
+      <div id="about-row">
+        <div id="about-col-1">
+          <img src="./Photos/Office.png" alt="" />
+        </div>
+        <div id="about-col-2">
+          <h1>About</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+            necessitatibus, voluptas dolores, laborum eius adipisci, fugiat a
+            nihil vitae aspernatur labore maiores. Tenetur a qui quisquam, quo
+            error delectus ab.
+          </p>
+
+          <div id="about-link">
+            <div class="about-tab-link selected" onclick="About('Skill')">
+              Skill
+            </div>
+            <div class="about-tab-link" onclick="About('Education')">
+              Education
+            </div>
+            <div class="about-tab-link" onclick="About('Experiance')">
+              Experiance
+            </div>
+          </div>
+          <div class="about-tab-contant active" id="Skill">
+            <ul>
+              <li>
+                <span>C++ / DSA</span> <br />
+                HTML CSS JavaScript <br />
+                NodeJs <br />
+                MongoDB, MySql <br />
+                MS Word
+              </li>
+            </ul>
+          </div>
+          <div class="about-tab-contant" id="Education">
+            <ul>
+              <li>
+                <span>B.Tech.(CSE)</span> <br />
+                12th => 82% / 10th => 80%<br />
+                From SVM Fatehpur
+              </li>
+            </ul>
+          </div>
+          <div class="about-tab-contant" id="Experiance">
+            <ul>
+              <li>
+                <span>Front End</span> <br />
+                <span>Back End</span> <br />
+                C++ High Level <br />
+                DSA High Level <br />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------- Services------------------ -->
+
+    <div id="Service">
+      <h1 id="head-h1">My Services</h1>
+
+      <div id="Service-content">
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+
+          <h1>App Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            harum animi reprehenderit aperiam in exercitationem? Consequatur
+            dolores vel dicta molestiae
+          </p>
+          <a href="#">Lern More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h1>Web Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            harum animi reprehenderit aperiam in exercitationem? Consequatur
+            dolores vel dicta molestiae
+          </p>
+          <a href="#">Lern More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-webflow"></i>
+          <h1>UI Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            harum animi reprehenderit aperiam in exercitationem? Consequatur
+            dolores vel dicta molestiae
+          </p>
+          <a href="#">Lern More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------Portfolio------------------------------------- -->
+
+    <div id="Portfolio">
+      <h1 id="head-h1">My Work</h1>
+      <div id="work">
+        <div class="work-id">
+          <img src="./Photos/Work1.jpg" alt="" />
+          <div class="layer">
+            <h1>App Design</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              vero possimus provident
+            </p>
+            <a href="#"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work-id">
+          <img src="./Photos/Work2.jpg" alt="" />
+          <div class="layer">
+            <h1>UI Design</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              vero possimus provident
+            </p>
+            <a href="#"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work-id">
+          <img src="./Photos/Work3.jpg" alt="" />
+          <div class="layer">
+            <h1>Web Design</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              vero possimus provident
+            </p>
+            <a href="#"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <button id="work-btn">See More</button>
+    </div>
+
+    <!-- ------------------------Contact----------------------------- -->
+
+    <div id="contact">
+      <div id="contact-row">
+        <div id="cnt-col1">
+          <h1 id="cnt-h1">Contact Me</h1>
+          <p>
+            <a href=""><i class="fa-regular fa-paper-plane"></i></a>
+            palrajan196@gmail.com
+          </p>
+          <p>
+            <a href=""><i class="fa-solid fa-phone"></i> </a> 7052370557
+          </p>
+
+          <div id="social">
+            <a href=""></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <div id="cnt-btn">
+            <a href=""><button>Download CV</button></a>
+          </div>
+        </div>
+        <div id="cnt-col2">
+          <form action="">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" />
+            <textarea name="" placeholder="Your Massage" rows="6"></textarea>
+            <div id="cnt-btn">
+              <button id="cnt-btn" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------bottom------------- -->
+
+    <div id="bottom">
+      <p>
+        Copyright <i class="fa-regular fa-copyright"></i> Rajan. Made with
+        <i class="fa-solid fa-heart"></i> by Any Name
+      </p>
+    </div>
+  </body>
+  <script src="Portfolio.js"></script>
+</html>
